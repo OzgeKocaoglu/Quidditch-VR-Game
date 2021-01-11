@@ -62,12 +62,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             Debug.Log("Pressed space");
-            playerRigidbody.AddForce(0, playerSpeed, 0);
+            playerRigidbody.AddForce(0, upSpeed, 0);
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
             Debug.Log("Pressed shift");
-            playerRigidbody.AddForce(0, -playerSpeed, 0);
+            playerRigidbody.AddForce(0, -upSpeed, 0);
         }
     }
     
