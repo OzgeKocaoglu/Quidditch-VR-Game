@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private float upSpeed = 1;
     private Rigidbody playerRigidbody;
 
+    #region Unity Functions
     private void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
@@ -26,6 +27,8 @@ public class PlayerController : MonoBehaviour
             Debug.Log("SCORE");
         }
     }
+
+    #endregion
 
     void Movement()
     {
